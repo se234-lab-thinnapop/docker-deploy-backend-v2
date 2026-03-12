@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-t
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/234-deploylab-backend:latest
 
       - name: Copy file via ssh
         uses: appleboy/scp-action@v1
